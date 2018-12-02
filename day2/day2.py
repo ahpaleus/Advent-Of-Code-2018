@@ -16,22 +16,22 @@ for x in file_strings:
 	countery.append(Counter(x).most_common(2))
 	
 def check(text):
-	tablica = [0] * 2
+	table = [0] * 2
 	if text[0][1] == text[1][1]:
 		if text[0][1] == 3:
-			tablica[1] += 1
+			table[1] += 1
 		elif text[0][1] == 2:
-			tablica[0] += 1
-		return tablica
+			table[0] += 1
+		return table
 	elif text[0][1] == 2:
-		tablica[0] += 1
+		table[0] += 1
 	elif text[0][1] == 3:
-		tablica[1] += 1
+		table[1] += 1
 	if text[1][1] == 2:
-		tablica[0] += 1
+		table[0] += 1
 	elif text[1][1] == 3:
-		tablica[1] += 1
-	return tablica
+		table[1] += 1
+	return table
 		
 double = 0 
 three = 0
