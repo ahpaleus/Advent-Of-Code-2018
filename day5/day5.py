@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import re
 
 file_input=open('input','r')
